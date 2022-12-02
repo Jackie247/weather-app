@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  <script defer src="index.c82ba39b0416340d2fa9.js"></script><script defer src="shared.703e19d8a2892de6b23d.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="logo"></div>
+      <div class="title-container">
+        <h1>Tian Qi</h1>
+      </div>
+      <nav class="nav">
+        <div class="site-pages">
+          <ul>
+            <li>News</li>
+            <li>Weather</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="btns-container">
+        <button id="fahrenheit" type="button" class="switch-temp-unit">
+          °C
+        </button>
+        <button id="celcius" type="button" class="switch-temp-unit">°F</button>
+        <button type="button" class="switch-theme-light-dark">Dark</button>
+        <button type="button" class="switch-theme-light-dark">Light</button>
+      </div>
+    </header>
+    <main class="main">
+      <section id="search">
+        <h2 class="weather-description"></h2>
+        <p class="location"></p>
+        <p class="date-text"></p>
+        <h2 class="temp-num"></h2>
+        <div class="icon-container"></div>
+        <label for="search-location-input">Search for location:</label>
+        <input
+          type="text"
+          id="search-location-input"
+          name="search-location-input"
+          placeholder="Search Location..."
+        />
+      </section>
+      <section id="weather-content">
+        <article id="weather-display-container">
+          <article class="day-forecast" data-day="monday">
+            <h2 class="day"></h2>
+            <p class="current-temp"></p>
+            <p class="lowest-temp"></p>
+            <img src="" alt="" />
+          </article>
+        </article>
+      </section>
+      <section id="sidebar-info"></section>
+    </main>
+    <footer class="footer">
+      <p class="credit-text"></p>
+      <a href="" class="github"
+        >My Github
+        <i></i>
+      </a>
+    </footer>
+  </body>
+</html>
