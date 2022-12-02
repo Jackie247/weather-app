@@ -31,5 +31,3 @@ TBA
 - <a href="https://www.digitalocean.com/community/tutorials/understanding-javascript-promises">Understanding JS Promises</a>
 
 - <a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md">Callbacks</a>
-
-- <a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md">Callbacks</a>
