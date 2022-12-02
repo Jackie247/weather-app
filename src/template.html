@@ -9,9 +9,11 @@
   <body>
     <header class="header">
       <div class="logo"></div>
-      <div class="title-container"></div>
+      <div class="title-container">
+        <h1>Tian Qi</h1>
+      </div>
       <nav class="nav">
-        <div class="pages">
+        <div class="site-pages">
           <ul>
             <li>News</li>
             <li>Weather</li>
@@ -19,11 +21,38 @@
         </div>
       </nav>
       <div class="btns-container">
-        <button class="switch-temp"></button>
-        <button class="switch-theme"></button>
+        <button class="switch-temp-unit"></button>
+        <button class="switch-theme-light-dark"></button>
       </div>
     </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <main class="main">
+      <section id="search">
+        <h2 class="weather-description"></h2>
+        <p class="location"></p>
+        <p class="date-text"></p>
+        <h2 class="temp-num"></h2>
+        <div class="icon-container"></div>
+        <label for="search-location-input">Search:</label>
+        <input id="search-location-input" placeholder="Search Location..." />
+      </section>
+      <section id="weather-content">
+        <article id="weather-display-container">
+          <article class="day-forecast" data-day="monday">
+            <h2 class="day"></h2>
+            <p class="current-temp"></p>
+            <p class="lowest-temp"></p>
+            <img src="" alt="" />
+          </article>
+        </article>
+      </section>
+      <section id="sidebar-info"></section>
+    </main>
+    <footer class="footer">
+      <p class="credit-text"></p>
+      <a href="" class="github"
+        >Github
+        <i></i>
+      </a>
+    </footer>
   </body>
 </html>
