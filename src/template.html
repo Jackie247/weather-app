@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
     <header class="header">
@@ -21,8 +22,12 @@
         </div>
       </nav>
       <div class="btns-container">
-        <button type="button" class="switch-temp-unit"></button>
-        <button type="button" class="switch-theme-light-dark"></button>
+        <button id="fahrenheit" type="button" class="switch-temp-unit">
+          °C
+        </button>
+        <button id="celcius" type="button" class="switch-temp-unit">°F</button>
+        <button type="button" class="switch-theme-light-dark">Dark</button>
+        <button type="button" class="switch-theme-light-dark">Light</button>
       </div>
     </header>
     <main class="main">
