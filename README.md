@@ -4,7 +4,7 @@
 
 Live Preview: In development
 
-This will be my <a href='https://www.theodinproject.com/lessons/node-path-javascript-weather-app'>weather app</a> project on The Odin Project curriculum.
+This will be my <a href='https://www.theodinproject.com/lessons/node-path-javascript-weather-app'>weather app</a> for The Odin Project curriculum.
 
 Users will be able to search a location and display the relevant weather data from that location.
 
