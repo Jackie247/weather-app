@@ -535,62 +535,15 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/js/index.js":
+/***/ "./src/js/index.ts":
 /*!*************************!*\
-  !*** ./src/js/index.js ***!
+  !*** ./src/js/index.ts ***!
   \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/styles.scss */ "./src/style/styles.scss");
-/* harmony import */ var _ui_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui.js */ "./src/js/ui.js");
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
-
-
-/***/ }),
-
-/***/ "./src/js/ui.js":
-/*!**********************!*\
-  !*** ./src/js/ui.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ UI)
-/* harmony export */ });
-class UI {
-  // Rendering To Screen
-  static displayWeek() {
-    // display the retrieved weather reports for the upcoming week to interface
-  }
-  static displayDayHourly() {
-    // display the retrieved hourly weather reports for today to the interface
-  }
-  static displayHumidity() {
-    // display humidity to additional info section
-  }
-  static displayRainChance() {
-    // display chance of rain to additional info section
-  }
-  static displayWindSpeed() {
-    // display wind speed to additional info section
-  }
-  static displayTempFeel() {
-    // display temp feel to additional info section
-  }
-  // Updating content widgets
-  static updateWeatherIcon() {
-    // update icon based on rainy,sunny,cloudy...
-  }
-  static updateTemp() {
-    UI.updateHighestTemp();
-    UI.updateLowestTemp();
-  }
-  static updateHighestTemp() {}
-  static updateLowestTemp() {}
-}
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__webpack_require__(/*! ../style/styles.scss */ "./src/style/styles.scss");
 
 
 /***/ }),
@@ -608,6 +561,6 @@ module.exports = __webpack_require__.p + "clouds.png";
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/js/index.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/js/index.ts"));
 /******/ }
 ]);
