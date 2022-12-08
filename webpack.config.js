@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: { import: "./src/js/index.js", dependOn: "shared" },
+    index: { import: "./src/js/index.ts", dependOn: "shared" },
     shared: "lodash",
   },
   output: {
@@ -42,6 +42,11 @@ module.exports = {
             publicPath: "../webfonts",
           },
         },
+      },
+      {
+        test: /\.ts$/,
+        use: "ts-loader",
+        include: [path.resolve(__dirname, "src/js")],
       },
     ],
   },
