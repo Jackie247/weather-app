@@ -19,39 +19,40 @@
       </div>
     </header>
     <main class="main">
-      <div class="main-background">
-        <div class="main-content">
-          <section id="search">
-            <form id="search-form" class="form">
-              <label for="search-location-input">Search for location:</label>
-              <input
-                type="text"
-                id="search-location-input"
-                name="search-location-input"
-                placeholder="Search Location..."
-              />
-              <button id="search-btn" class="search-btn" type="submit"></button>
-            </form>
-          </section>
+      <div class="main-background"></div>
+      <div class="main-content">
+        <section id="search">
+          <form id="search-form" class="form">
+            <input
+              type="text"
+              id="search-location-input"
+              name="search-location-input"
+              placeholder="Search Location..."
+              aria-label="Search"
+            />
+            <button id="search-btn" class="search-btn" type="submit">
+              Search
+            </button>
+          </form>
+        </section>
 
-          <section id="search-results-weather">
-            <article id="weather-display-container">
-              <article class="day-forecast" data-day="monday">
-                <h2 class="day"></h2>
-                <p class="current-temp"></p>
-                <p class="lowest-temp"></p>
-                <img src="" alt="" />
-              </article>
+        <section id="search-results-weather">
+          <article id="weather-display-container">
+            <article class="day-forecast" data-day="monday">
+              <h2 class="day"></h2>
+              <p class="current-temp"></p>
+              <p class="lowest-temp"></p>
+              <img src="" alt="" />
             </article>
-          </section>
-          <section id="search-results-additional-info">
-            <h2 class="weather-description"></h2>
-            <p class="location"></p>
-            <p class="date-text"></p>
-            <h2 class="temp-num"></h2>
-            <div class="icon-container"></div>
-          </section>
-        </div>
+          </article>
+        </section>
+        <section id="search-results-additional-info">
+          <h2 class="weather-description"></h2>
+          <p class="location"></p>
+          <p class="date-text"></p>
+          <h2 class="temp-num"></h2>
+          <div class="icon-container"></div>
+        </section>
       </div>
     </main>
     <footer class="footer">
