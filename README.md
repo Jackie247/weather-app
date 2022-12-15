@@ -20,6 +20,8 @@ TBA
 
 - Becoming familiar with using JS promises and async/await structured code.
 
+- Probably a bit overkill to use TypeScript for this project but I'm trying to learn it so I'll use it for this project.
+
 <h2> Helpful Links </h2>
 
 - <a href ='https://developer.mozilla.org/en-US/'>Mozilla Docs</a>
