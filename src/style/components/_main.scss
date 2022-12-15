@@ -1,4 +1,29 @@
 main {
   min-height: calc(100vh - 100px);
-  padding: 20px;
+  .main-background {
+    display: none;
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url("../assets/noaa-kcvlb727mn8-unsplash.webp");
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    z-index: -1;
+  }
+  .main-content {
+    padding: 10px;
+    section#search {
+      form {
+        justify-content: center;
+        display: flex;
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.main-background.active {
+  display: block;
 }
