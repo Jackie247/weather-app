@@ -9,6 +9,7 @@ module.exports = {
   },
   output: {
     filename: "[name].[chunkhash].js",
+    publicPath: "auto",
     path: path.resolve(__dirname, "dist"),
     clean: true,
     assetModuleFilename: "[name][ext]",
