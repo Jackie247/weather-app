@@ -12,7 +12,7 @@ The webpages background should change based on the retrieved data and there shou
 
 <h2> Key Topics </h2>
 
-TBA
+- TypeScript
 
 <h2> Learning Objectives </h2>
 
