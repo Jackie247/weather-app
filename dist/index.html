@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./style/main.css" />
-  <script defer src="index.f855e84554593bdd6966.js"></script><script defer src="shared.833b48b24ee43a28a077.js"></script></head>
+  <script defer src="bundle.js"></script></head>
   <body>
     <header class="header">
       <div class="logo"></div>
@@ -19,31 +19,41 @@
       </div>
     </header>
     <main class="main">
-      <section id="search">
-        <h2 class="weather-description"></h2>
-        <p class="location"></p>
-        <p class="date-text"></p>
-        <h2 class="temp-num"></h2>
-        <div class="icon-container"></div>
-        <label for="search-location-input">Search for location:</label>
-        <input
-          type="text"
-          id="search-location-input"
-          name="search-location-input"
-          placeholder="Search Location..."
-        />
-      </section>
-      <section id="weather-content">
-        <article id="weather-display-container">
-          <article class="day-forecast" data-day="monday">
-            <h2 class="day"></h2>
-            <p class="current-temp"></p>
-            <p class="lowest-temp"></p>
-            <img src="" alt="" />
+      <div class="main-background"></div>
+      <div class="main-content">
+        <section id="search">
+          <form id="search-form" class="form">
+            <input
+              type="text"
+              id="search-location-input"
+              name="search-location-input"
+              placeholder="Search Location..."
+              aria-label="Search location input"
+            />
+            <button id="search-btn" class="search-btn" type="submit">
+              Search
+            </button>
+          </form>
+        </section>
+
+        <section id="search-results-weather">
+          <article id="weather-display-container">
+            <article class="day-forecast" data-day="monday">
+              <h2 class="day"></h2>
+              <p class="current-temp"></p>
+              <p class="lowest-temp"></p>
+              <img src="" alt="" />
+            </article>
           </article>
-        </article>
-      </section>
-      <section id="sidebar-info"></section>
+        </section>
+        <section id="search-results-additional-info">
+          <h2 class="weather-description"></h2>
+          <p class="location"></p>
+          <p class="date-text"></p>
+          <h2 class="temp-num"></h2>
+          <div class="icon-container"></div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <p class="credit-text"></p>
