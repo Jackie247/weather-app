@@ -4,17 +4,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: { import: "./src/js/index.ts", dependOn: "shared" },
-    shared: "lodash",
+    index: { import: "./src/js/index.js" },
   },
   output: {
-    filename: "[name].[chunkhash].js",
-    publicPath: "auto",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
-    assetModuleFilename: "[name][ext]",
   },
-  devtool: false,
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -28,26 +24,6 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
-      },
-      {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        include: path.resolve(
-          __dirname,
-          "./node_modules/bootstrap-icons/font/fonts"
-        ),
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[ext]",
-            outputPath: "webfonts",
-            publicPath: "../webfonts",
-          },
-        },
-      },
-      {
-        test: /\.ts$/,
-        use: "ts-loader",
-        include: [path.resolve(__dirname, "src/js")],
       },
     ],
   },
