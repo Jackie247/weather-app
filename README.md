@@ -12,15 +12,11 @@ The webpages background should change based on the retrieved data and there shou
 
 <h2> Key Topics </h2>
 
-- TypeScript
-
 <h2> Learning Objectives </h2>
 
 - Implementing APIs within web apps.
 
-- Becoming familiar with using JS promises and async/await structured code.
-
-- Probably a bit overkill to use TypeScript for this project but I'm trying to learn it so I'll use it for this project.
+- Becoming familiar with using JS promises and asynchronous code.
 
 <h2> Helpful Links </h2>
 
