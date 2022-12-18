@@ -6,10 +6,10 @@ const Weather = (() => {
       const returnData = {
         name: data.name,
         main: {
-          temp: data.main.temp,
-          feelsLike: data.main.feels_like,
-          minTemp: data.main.temp_min,
-          maxTemp: data.main.temp_max,
+          temp: Math.round(data.main.temp),
+          feelsLike: Math.round(data.main.feels_like),
+          maxTemp: Math.round(data.main.temp_max),
+          minTemp: Math.round(data.main.temp_min),
         },
         weather: {
           currWeather: data.weather[0]["main"],
@@ -29,7 +29,6 @@ const Weather = (() => {
         .then((response) => response.json())
         .then((data) => parseData(data))
         .then((weatherData) => {
-          console.log(weatherData);
           resolve(weatherData);
         })
         .catch((error) => {
