@@ -4,11 +4,11 @@ const Weather = (() => {
   function parseData(data) {
     {
       const {
-        name: cityName,
-        main: { temp: temperature, feels_like: feelsLike, humidity },
-        wind: { wind: windSpeed },
+        name: location,
+        main: { temp, feels_like, humidity },
+        wind: { speed: windSpeed },
       } = data;
-      return { cityName, temperature, feelsLike, humidity, windSpeed };
+      return { location, temp, feels_like, humidity, windSpeed };
     }
   }
   function getWeatherData(location) {
