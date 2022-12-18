@@ -3,12 +3,20 @@ const Weather = (() => {
   // Convert raw data from API and get the fields we want.
   function parseData(data) {
     {
-      const {
-        name: location,
-        main: { temp, feels_like, humidity },
-        wind: { speed: windSpeed },
-      } = data;
-      return { location, temp, feels_like, humidity, windSpeed };
+      const returnData = {
+        name: data.name,
+        main: {
+          temp: data.main.temp,
+          feelsLike: data.main.feels_like,
+          minTemp: data.main.temp_min,
+          maxTemp: data.main.temp_max,
+        },
+        weather: {
+          currWeather: data.weather[0]["main"],
+          description: data.weather[0]["description"],
+        },
+      };
+      return returnData;
     }
   }
   function getWeatherData(location) {
