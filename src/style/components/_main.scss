@@ -13,12 +13,25 @@ main {
   .main-content {
     padding: 10px;
     section#search {
+      margin-top: 1rem;
       form {
         justify-content: center;
         display: flex;
         input {
           margin-right: 10px;
         }
+      }
+    }
+    .main-display {
+      margin-top: 1rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      .location-name {
+        font-size: clamp(0.5em, 20px, 2rem);
+      }
+      .temp {
+        font-size: clamp(1.5em, 30px, 3rem);
       }
     }
   }
