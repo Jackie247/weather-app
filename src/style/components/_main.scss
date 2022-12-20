@@ -15,8 +15,8 @@ main {
     section#search {
       margin-top: 1rem;
       form {
-        justify-content: center;
         display: flex;
+        padding: 0 1rem;
         .location {
           margin-right: 10px;
         }
@@ -34,8 +34,14 @@ main {
         font-size: clamp(0.5em, 20px, 2rem);
       }
       .temp {
-        font-size: clamp(1.5em, 30px, 3rem);
+        font-size: 50px;
       }
+    }
+    .weather-additional-info {
+      display: flex;
+      flex-flow: column;
+      margin-top: 1rem;
+      padding: 0 1rem;
     }
   }
 }

@@ -18,4 +18,5 @@ searchButton.addEventListener("click", async () => {
   }
   const weatherData = await Weather.getWeatherData(searchLocationInput.value);
   UI.updateMainDisplay(weatherData);
+  UI.updateAdditionalInfo(weatherData);
 });
