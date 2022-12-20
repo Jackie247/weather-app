@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/7765e75673.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -22,44 +26,39 @@
       <div class="main-background"></div>
       <div class="main-content">
         <section id="search">
-          <form id="search-form" class="form">
+          <form id="search-form" class="form" autocomplete="off">
             <input
               type="text"
               id="search-location-input"
+              class="location input"
               name="search-location-input"
               placeholder="Search Location..."
               aria-label="Search"
+              novalidate
             />
             <button id="search-btn" class="search-btn" type="submit">
               Search
             </button>
           </form>
         </section>
-
-        <section id="search-results-weather">
-          <article id="weather-display-container">
-            <article class="day-forecast" data-day="monday">
-              <h2 class="day"></h2>
-              <p class="current-temp"></p>
-              <p class="lowest-temp"></p>
-              <img src="" alt="" />
-            </article>
-          </article>
+        <section id="main-display" class="main-display">
+          <strong><p class="location-name">{cityName}</p></strong>
+          <strong><p class="temp">68°C</p></strong>
+          <div class="high-low-container">
+            <span class="high-temp">H: 85°C</span>
+            <span class="low-temp">L: 65°C</span>
+          </div>
         </section>
-        <section id="search-results-additional-info">
-          <h2 class="weather-description"></h2>
-          <p class="location"></p>
-          <p class="date-text"></p>
-          <h2 class="temp-num"></h2>
-          <div class="icon-container"></div>
+        <section id="weather-additional-info">
+          <p></p>
+          <p></p>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <p class="credit-text"></p>
-      <a href="" class="github"
-        >My Github
-        <i></i>
+      <p class="credit-text">Created by Jackie247</p>
+      <a href="https://github.com/Jackie247" class="github" title="My Github">
+        <i class="fa-brands fa-github fa-lg"></i>
       </a>
     </footer>
   </body>
