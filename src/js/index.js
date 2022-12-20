@@ -1,8 +1,8 @@
 import "../style/styles.scss";
-import weatherAPI from "./weatherAPI";
-import ui from "./ui";
+import Weather from "./weatherAPI";
+import UI from "./ui";
 
-console.log("hello");
+console.log("Index Loaded");
 
 const searchLocationInput = document.getElementById("search-location-input");
 const searchForm = document.getElementById("search-form");
@@ -16,9 +16,6 @@ searchButton.addEventListener("click", async () => {
   if (searchLocationInput.value == "") {
     return;
   }
-  const weatherData = await weatherAPI.getWeatherData(
-    searchLocationInput.value
-  );
-  console.log(weatherData);
-  ui.updateMainDisplay(weatherData);
+  const weatherData = await Weather.getWeatherData(searchLocationInput.value);
+  UI.updateMainDisplay(weatherData);
 });
