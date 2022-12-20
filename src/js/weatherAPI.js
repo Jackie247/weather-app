@@ -2,22 +2,20 @@
 const Weather = (() => {
   // Convert raw data from API and get the fields we want.
   function parseData(data) {
-    {
-      const returnData = {
-        name: data.name,
-        main: {
-          temp: Math.round(data.main.temp),
-          feelsLike: Math.round(data.main.feels_like),
-          maxTemp: Math.round(data.main.temp_max),
-          minTemp: Math.round(data.main.temp_min),
-        },
-        weather: {
-          currWeather: data.weather[0]["main"],
-          description: data.weather[0]["description"],
-        },
-      };
-      return returnData;
-    }
+    const returnData = {
+      name: data.name,
+      main: {
+        temp: Math.round(data.main.temp),
+        feelsLike: Math.round(data.main.feels_like),
+        maxTemp: Math.round(data.main.temp_max),
+        minTemp: Math.round(data.main.temp_min),
+      },
+      weather: {
+        currWeather: data.weather[0]["main"],
+        description: data.weather[0]["description"],
+      },
+    };
+    return returnData;
   }
   function getWeatherData(location) {
     return new Promise((resolve, reject) => {
@@ -27,9 +25,13 @@ const Weather = (() => {
         mode: "cors",
       })
         .then((response) => response.json())
-        .then((data) => parseData(data))
-        .then((weatherData) => {
-          resolve(weatherData);
+        .then((data) => {
+          console.log(data);
+          return parseData(data);
+        })
+        .then((parsedData) => {
+          console.log(parsedData);
+          resolve(parsedData);
         })
         .catch((error) => {
           // Rejected state, API data was unable to be retrieved.
