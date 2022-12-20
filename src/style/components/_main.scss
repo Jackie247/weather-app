@@ -17,8 +17,11 @@ main {
       form {
         justify-content: center;
         display: flex;
-        input {
+        .location {
           margin-right: 10px;
+        }
+        .location:focus {
+          outline: none;
         }
       }
     }
